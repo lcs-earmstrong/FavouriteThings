@@ -7,10 +7,15 @@
 
 import SwiftUI
 
+// conforms to the view protocol
+// A view is just a structure that is part of the user interface - what is seen and manipulated by the user
+// Each structure that conforms to the view protocol must follow two rules
+// Must have a body property and must 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Image("Evan xc skiing")
+            .resizable()
+            .scaledToFit()
     }
 }
 
