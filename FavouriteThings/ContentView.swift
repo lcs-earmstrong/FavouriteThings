@@ -13,9 +13,24 @@ import SwiftUI
 // Must have a body property and must 
 struct ContentView: View {
     var body: some View {
-        Image("Evan xc skiing")
-            .resizable()
-            .scaledToFit()
+      
+        NavigationView {
+            
+            List {
+                
+        NavigationLink(destination: Cross_Country_Skiing()) {
+                    Text("cross country skiing")
+                }
+                
+                NavigationLink(destination: Running()) {
+                    Text("Running")
+                }
+                
+                NavigationLink(destination: My_Dog_Bentley()) {
+                    Text("My dog Bentley")
+                }
+            }
+        }
     }
 }
 
