@@ -13,12 +13,12 @@ import SwiftUI
 // Must have a body property and must 
 struct ContentView: View {
     var body: some View {
-      
+        
         NavigationView {
             
             List {
                 
-        NavigationLink(destination: Cross_Country_Skiing()) {
+                NavigationLink(destination: crossCountrySkiing()) {
                     Text("cross country skiing")
                 }
                 
@@ -30,6 +30,7 @@ struct ContentView: View {
                     Text("My dog Bentley")
                 }
             }
+            .navigationTitle("Favorite things")
         }
     }
 }

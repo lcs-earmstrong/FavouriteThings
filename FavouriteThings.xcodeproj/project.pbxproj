@@ -13,7 +13,7 @@
 		B842C4F325CC40AC00D450C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B842C4F225CC40AC00D450C4 /* Preview Assets.xcassets */; };
 		B864A4B825CDA8C3005830F6 /* My Dog Bentley.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864A4B725CDA8C3005830F6 /* My Dog Bentley.swift */; };
 		B864A4BB25CDA919005830F6 /* Running.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864A4BA25CDA919005830F6 /* Running.swift */; };
-		B864A4BE25CDA941005830F6 /* Cross Country Skiing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864A4BD25CDA941005830F6 /* Cross Country Skiing.swift */; };
+		B864A4C325CDB1A1005830F6 /* crossCountrySkiing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864A4C225CDB1A1005830F6 /* crossCountrySkiing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		B842C4F425CC40AC00D450C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B864A4B725CDA8C3005830F6 /* My Dog Bentley.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "My Dog Bentley.swift"; sourceTree = "<group>"; };
 		B864A4BA25CDA919005830F6 /* Running.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running.swift; sourceTree = "<group>"; };
-		B864A4BD25CDA941005830F6 /* Cross Country Skiing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cross Country Skiing.swift"; sourceTree = "<group>"; };
+		B864A4C225CDB1A1005830F6 /* crossCountrySkiing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crossCountrySkiing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				B842C4F425CC40AC00D450C4 /* Info.plist */,
 				B842C4F125CC40AC00D450C4 /* Preview Content */,
 				B864A4B725CDA8C3005830F6 /* My Dog Bentley.swift */,
-				B864A4BD25CDA941005830F6 /* Cross Country Skiing.swift */,
 				B864A4BA25CDA919005830F6 /* Running.swift */,
+				B864A4C225CDB1A1005830F6 /* crossCountrySkiing.swift */,
 			);
 			path = FavouriteThings;
 			sourceTree = "<group>";
@@ -147,10 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B864A4C325CDB1A1005830F6 /* crossCountrySkiing.swift in Sources */,
 				B864A4B825CDA8C3005830F6 /* My Dog Bentley.swift in Sources */,
 				B864A4BB25CDA919005830F6 /* Running.swift in Sources */,
 				B842C4EE25CC409600D450C4 /* ContentView.swift in Sources */,
-				B864A4BE25CDA941005830F6 /* Cross Country Skiing.swift in Sources */,
 				B842C4EC25CC409500D450C4 /* FavouriteThingsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,7 @@ struct Running: View {
         Text("First race with LCS at LCS.")
 
         }
+        .navigationTitle("Running")
     }
 }
 

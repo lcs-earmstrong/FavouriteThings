@@ -15,9 +15,10 @@ struct My_Dog_Bentley: View {
         .resizable()
         .scaledToFit()
 
-        Text("This is not my dog but is a dog of the same breed.")
+        Text("This is not a picture of my dog but is a dog of the same breed that looks very simular.")
 
         }
+        .navigationTitle ("Cutest dog in the world")
     }
 }
 
