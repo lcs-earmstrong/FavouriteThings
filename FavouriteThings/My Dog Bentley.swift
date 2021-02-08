@@ -10,12 +10,14 @@ import SwiftUI
 struct My_Dog_Bentley: View {
     var body: some View {
         
-        VStack {
+        ScrollView {
         Image("My Dog Bentley")
         .resizable()
-        .scaledToFit()
+            .padding(.horizontal)
+            .scaledToFit()
 
-        Text("This is not a picture of my dog but is a dog of the same breed that looks very simular.")
+            Text("This is not a picture of my dog but is a dog of the same breed that looks very simular.")
+                .padding(.horizontal)
 
         }
         .navigationTitle ("Cutest dog in the world")

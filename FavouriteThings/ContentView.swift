@@ -19,18 +19,63 @@ struct ContentView: View {
             List {
                 
                 NavigationLink(destination: crossCountrySkiing()) {
-                    Text("cross country skiing")
+                    HStack{
+                        Text("⛷")
+                            .font(.title)
+                        
+                        VStack(alignment: .leading){
+                            Text("Cross Country Skiing")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                                
+                            Text("There is no better sport")
+                                .font(.subheadline)
+
+                        }
+                        
+                        
+                }
                 }
                 
                 NavigationLink(destination: Running()) {
-                    Text("Running")
+                    HStack{
+                        Text("🏃🏻‍♂️")
+                            .font(.title)
+                        
+                        VStack(alignment: .leading){
+                            Text("Running")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                                
+                            Text("Great sport")
+                                .font(.subheadline)
+
+                        }
+                        
+                        
+                }
                 }
                 
                 NavigationLink(destination: My_Dog_Bentley()) {
-                    Text("My dog Bentley")
+                    HStack{
+                        Text("🐕‍🦺")
+                            .font(.title)
+                        
+                        VStack(alignment: .leading){
+                            Text("Bentley")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                                
+                            Text("Cutest dog in the World")
+                                .font(.subheadline)
+
+                        }
+                        
+                        
+                }
                 }
             }
-            .navigationTitle("Favorite things")
+            .navigationTitle("Evan's Favorite Things")
         }
     }
 }
@@ -38,5 +83,10 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
+        ContentView()
+            .preferredColorScheme(.light)
+            
+            
     }
 }

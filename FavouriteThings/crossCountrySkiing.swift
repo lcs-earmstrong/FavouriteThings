@@ -9,6 +9,7 @@ import SwiftUI
 
 struct crossCountrySkiing: View {
     var body: some View {
+        
         VStack {
         Image("Evan xc skiing")
         .resizable()
