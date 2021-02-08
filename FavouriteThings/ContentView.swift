@@ -19,66 +19,29 @@ struct ContentView: View {
             List {
                 
                 NavigationLink(destination: crossCountrySkiing()) {
-                    HStack{
-                        Text("⛷")
-                            .font(.title)
-                        
-                        VStack(alignment: .leading){
-                            Text("Cross Country Skiing")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                
-                            Text("There is no better sport")
-                                .font(.subheadline)
-
-                        }
-                        
-                        
-                }
+                    ListItem(hint: "⛷",
+                             title: "Cross Country Skiing",
+                             sumary: "There is no better sport")
                 }
                 
                 NavigationLink(destination: Running()) {
-                    HStack{
-                        Text("🏃🏻‍♂️")
-                            .font(.title)
-                        
-                        VStack(alignment: .leading){
-                            Text("Running")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                
-                            Text("Great sport")
-                                .font(.subheadline)
-
-                        }
-                        
-                        
-                }
+                    ListItem(hint: "🏃🏻‍♂️",
+                             title: "Running",
+                             sumary: "Fun sport when there isn't any snow")
                 }
                 
                 NavigationLink(destination: My_Dog_Bentley()) {
-                    HStack{
-                        Text("🐕‍🦺")
-                            .font(.title)
-                        
-                        VStack(alignment: .leading){
-                            Text("Bentley")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                
-                            Text("Cutest dog in the World")
-                                .font(.subheadline)
-
-                        }
-                        
+                    ListItem(hint: "🐕‍🦺",
+                             title: "Bentley",
+                             sumary: "Cutest dog in the world")
+                }
+  
                         
                 }
                 }
             }
             .navigationTitle("Evan's Favorite Things")
         }
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -88,5 +51,32 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.light)
             
             
+    }
+}
+
+struct ListItem: View {
+    
+    var hint: String
+    var title: String
+    var sumary: String
+    
+    
+    var body: some View {
+        HStack{
+            Text(hint)
+                .font(.title)
+            
+            VStack(alignment: .leading){
+                Text(title)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                
+                Text(sumary)
+                    .font(.subheadline)
+                
+            }
+            
+            
+        }
     }
 }
