@@ -11,21 +11,21 @@
 		B842C4EE25CC409600D450C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842C4ED25CC409600D450C4 /* ContentView.swift */; };
 		B842C4F025CC40AC00D450C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B842C4EF25CC40AC00D450C4 /* Assets.xcassets */; };
 		B842C4F325CC40AC00D450C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B842C4F225CC40AC00D450C4 /* Preview Assets.xcassets */; };
-		B864A4B825CDA8C3005830F6 /* My Dog Bentley.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864A4B725CDA8C3005830F6 /* My Dog Bentley.swift */; };
-		B864A4BB25CDA919005830F6 /* Running.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864A4BA25CDA919005830F6 /* Running.swift */; };
-		B864A4C325CDB1A1005830F6 /* crossCountrySkiing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864A4C225CDB1A1005830F6 /* crossCountrySkiing.swift */; };
+		B877B38A25D1A32C00E2EBEE /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B877B38925D1A32B00E2EBEE /* ListItem.swift */; };
+		B877B39225D315C900E2EBEE /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B877B39125D315C900E2EBEE /* Thing.swift */; };
+		B877B39525D319F500E2EBEE /* ThingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B877B39425D319F500E2EBEE /* ThingDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B842C4E825CC409500D450C4 /* FavouriteThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B842C4EB25CC409500D450C4 /* FavouriteThingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteThingsApp.swift; sourceTree = "<group>"; };
-		B842C4ED25CC409600D450C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B842C4ED25CC409600D450C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		B842C4EF25CC40AC00D450C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B842C4F225CC40AC00D450C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B842C4F425CC40AC00D450C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B864A4B725CDA8C3005830F6 /* My Dog Bentley.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "My Dog Bentley.swift"; sourceTree = "<group>"; };
-		B864A4BA25CDA919005830F6 /* Running.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running.swift; sourceTree = "<group>"; };
-		B864A4C225CDB1A1005830F6 /* crossCountrySkiing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crossCountrySkiing.swift; sourceTree = "<group>"; };
+		B877B38925D1A32B00E2EBEE /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		B877B39125D315C900E2EBEE /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		B877B39425D319F500E2EBEE /* ThingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +63,9 @@
 				B842C4EF25CC40AC00D450C4 /* Assets.xcassets */,
 				B842C4F425CC40AC00D450C4 /* Info.plist */,
 				B842C4F125CC40AC00D450C4 /* Preview Content */,
-				B864A4B725CDA8C3005830F6 /* My Dog Bentley.swift */,
-				B864A4BA25CDA919005830F6 /* Running.swift */,
-				B864A4C225CDB1A1005830F6 /* crossCountrySkiing.swift */,
+				B877B38925D1A32B00E2EBEE /* ListItem.swift */,
+				B877B39125D315C900E2EBEE /* Thing.swift */,
+				B877B39425D319F500E2EBEE /* ThingDetail.swift */,
 			);
 			path = FavouriteThings;
 			sourceTree = "<group>";
@@ -147,11 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B864A4C325CDB1A1005830F6 /* crossCountrySkiing.swift in Sources */,
-				B864A4B825CDA8C3005830F6 /* My Dog Bentley.swift in Sources */,
-				B864A4BB25CDA919005830F6 /* Running.swift in Sources */,
+				B877B38A25D1A32C00E2EBEE /* ListItem.swift in Sources */,
+				B877B39525D319F500E2EBEE /* ThingDetail.swift in Sources */,
 				B842C4EE25CC409600D450C4 /* ContentView.swift in Sources */,
 				B842C4EC25CC409500D450C4 /* FavouriteThingsApp.swift in Sources */,
+				B877B39225D315C900E2EBEE /* Thing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

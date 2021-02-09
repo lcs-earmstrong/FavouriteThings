@@ -12,36 +12,30 @@ import SwiftUI
 // Each structure that conforms to the view protocol must follow two rules
 // Must have a body property and must 
 struct ContentView: View {
+    
+    // create a copy of the data that we created in Thing.swift
+    // A "store" in developer speak is just "a place that we keep data"
     var body: some View {
         
         NavigationView {
             
-            List {
-                
-                NavigationLink(destination: crossCountrySkiing()) {
-                    ListItem(hint: "⛷",
-                             title: "Cross Country Skiing",
-                             sumary: "There is no better sport")
-                }
-                
-                NavigationLink(destination: Running()) {
-                    ListItem(hint: "🏃🏻‍♂️",
-                             title: "Running",
-                             sumary: "Fun sport when there isn't any snow")
-                }
-                
-                NavigationLink(destination: My_Dog_Bentley()) {
-                    ListItem(hint: "🐕‍🦺",
-                             title: "Bentley",
-                             sumary: "Cutest dog in the world")
-                }
-  
-                        
-                }
+            List(favouriteThings) { thing in
+
+                  NavigationLink(destination: ThingDetail(heroImage: thing.heroImage,
+                                                          details: thing.details,
+                                                          title: thing.title)) {
+                      
+                      ListItem(hint: thing.hint,
+                               title: thing.title,
+                               summary: thing.summary)
+                      
+                  }
+                  
+
+              }
+              .navigationTitle("Favourite Things")      }
                 }
             }
-            .navigationTitle("Evan's Favorite Things")
-        }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -54,29 +48,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ListItem: View {
-    
-    var hint: String
-    var title: String
-    var sumary: String
-    
-    
-    var body: some View {
-        HStack{
-            Text(hint)
-                .font(.title)
-            
-            VStack(alignment: .leading){
-                Text(title)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                
-                Text(sumary)
-                    .font(.subheadline)
-                
-            }
-            
-            
-        }
-    }
-}
