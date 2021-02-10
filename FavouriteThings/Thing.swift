@@ -43,7 +43,7 @@ This photo was taken at one of my favorite races in the Owen sound area.
           title: "Bentley",
           summary: "Cutest dog in the world",
           heroImage: "My Dog Bentley",
-          details: "This is not a picture of my dog but is a dog of the same breed that looks very simular."),
+          details: "This is not a picture of my dog but is a dog of the same breed that looks very simular. My dog is 6 years old, we had a dog named fingal who was a black lab.  Bentley although he is 6 still acts like a puppy,  always playfull, full of energy, but he sleeps a lot.  He is a cockapoo (cocker spaniel and poodle mix). He has a lot of attitude, I think that my brother would harass him when he was sleeping and now every time someone touches him when he is resting he will growl or snap at them but he never bites."),
 
     Thing(hint: "🍣",
           title: "Suchi",
