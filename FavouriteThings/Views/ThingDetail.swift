@@ -21,8 +21,7 @@ struct ThingDetail: View {
                     .scaledToFit()
                 
                 Text(segment.text)
-                    .padding()
-
+                    .padding(.horizontal, 11.0)
             }
         
             
