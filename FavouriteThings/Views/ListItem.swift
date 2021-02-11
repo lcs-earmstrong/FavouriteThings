@@ -9,34 +9,33 @@ import SwiftUI
 
 struct ListItem: View {
     
-    var hint: String
-    var title: String
-    var summary: String
-    
-    
+    var someThing: Thing
     var body: some View {
-        HStack{
-            Text(hint)
-                .font(.title)
+        HStack {
             
-            VStack(alignment: .leading){
-                Text(title)
-                    .font(.headline)
+            Text(someThing.hint)
+                .font(.largeTitle)
+            
+            VStack(alignment: .leading) {
+                
+                Text(someThing.title)
+                    .font(.title3)
                     .fontWeight(.bold)
                 
-                Text(summary)
+                Text(someThing.summary)
                     .font(.subheadline)
                 
             }
             
-            
+            Spacer()
         }
     }
 }
 
-
 struct ListItem_Previews: PreviewProvider {
     static var previews: some View {
-        ListItem(hint: "🦖", title: "T-Rex", summary: "They are extinct")
+        ListItem(someThing: favouriteThings[0])
+            .preferredColorScheme(.dark)
+            .padding()
     }
 }

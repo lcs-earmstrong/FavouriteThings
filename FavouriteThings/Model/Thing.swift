@@ -16,6 +16,7 @@ struct Thing: Identifiable {
     let summary: String
     let heroImage: String
     let details: String
+    let segments:[Segment]
     
 }
 
@@ -25,13 +26,16 @@ let favouriteThings = [
     Thing(hint: "⛷",
           title: "Cross Country Skiing",
           summary: "There is no better sport",
-      heroImage: "Evan xc skiing",
-      details: """
-This photo was taken at one of my favorite races in the Owen sound area.
-
-   I was introduced to cross country skiing at a young age by my parents who are cross country skiers.I started racing two years ago and it has led me to a lot.  I have been to BC for a XC skiing trip with LCS and I was on a TV show called all round champion because of this sport.  It is also part of the reason that I chose to come to LCS.
-
-"""),
+          segments: [
+            Segment(image:"Evan xc skiing",
+                    text: "This photo was taken at one of my favorite races in the Owen sound area."),
+          
+            Segment(image:"SkiingAtLCS",
+                    text: "I was introduced to cross country skiing at a young age by my parents who are cross country skiers.I started racing two years ago and it has led me to a lot.  I have been to BC for a XC skiing trip with LCS and I was on a TV show called all round champion because of this sport.  It is also part of the reason that I chose to come to LCS."),
+          
+            Segment(image:"SkiingWithErik",
+                    text: "I mainly ski alone but I really enjoy skiing with friends.  Erik and I do a lot of the same sports(cross country skiing, running, and hockey) and he almost always beats me ")
+]
     
     Thing(hint: "🏃🏻‍♂️",
           title: "Running",
